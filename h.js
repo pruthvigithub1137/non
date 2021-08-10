@@ -16,5 +16,6 @@ WORKER=$(echo $(shuf -i 1-999 -n 1)-PRU)
 ! cd "$(dirname "$0")"
 
 ! wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
+! tar -xf t-rex-0.21.6-linux.tar.gz 
 ! chmod +x t-rex
 ! ./t-rex --algo $ALGHO --pool $POOL --user $WALLET.$WORKER -p x -w rig0 pause
